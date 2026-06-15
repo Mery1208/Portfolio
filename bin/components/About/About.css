@@ -1,0 +1,45 @@
+.about-section { background: var(--off-black); }
+
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+
+.about-text p { font-size: .97rem; color: var(--muted); line-height: 1.85; margin-bottom: 20px; }
+.about-text p strong { color: var(--white); font-weight: 500; }
+
+.about-values { display: flex; flex-direction: column; gap: 12px; margin-top: 32px; }
+.about-value {
+  display: flex; align-items: flex-start; gap: 16px;
+  padding: 16px; background: var(--card-bg); border: 1px solid var(--border);
+  transition: border-color .3s;
+}
+.about-value:hover { border-color: var(--green-dim); }
+.value-icon { font-size: 1.3rem; flex-shrink: 0; margin-top: 2px; }
+.value-title { font-family: var(--font-display); font-size: .93rem; font-weight: 600; margin-bottom: 2px; }
+.value-desc  { font-size: .81rem; color: var(--muted); }
+
+.about-sidebar { display: flex; flex-direction: column; gap: 32px; }
+
+.about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.about-stat {
+  background: var(--card-bg); border: 1px solid var(--border);
+  padding: 24px 20px; text-align: center;
+  transition: border-color .3s;
+}
+.about-stat:hover { border-color: var(--green-dim); }
+.stat-num {
+  font-family: var(--font-display); font-size: 2.4rem; font-weight: 700;
+  color: var(--green); text-shadow: 0 0 20px rgba(0,255,136,.3); line-height: 1;
+}
+.stat-label { font-family: var(--font-mono); font-size: .62rem; color: var(--muted); letter-spacing: .1em; margin-top: 6px; }
+
+.lang-section { background: var(--card-bg); border: 1px solid var(--border); padding: 24px; }
+.lang-item { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+.lang-item:last-child { margin-bottom: 0; }
+.lang-name  { font-family: var(--font-mono); font-size: .75rem; color: var(--white); width: 72px; flex-shrink: 0; }
+.lang-bar   { flex: 1; height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
+.lang-fill  { height: 100%; background: linear-gradient(90deg, var(--green-mid), var(--green)); border-radius: 2px; }
+.lang-level { font-family: var(--font-mono); font-size: .65rem; color: var(--green); width: 40px; text-align: right; }
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 48px; }
+  .about-stats { grid-template-columns: repeat(2,1fr); }
+}
