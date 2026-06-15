@@ -13,7 +13,7 @@ export default function Hero() {
 
         <h1 className="hero-name">
           Hola, soy<br />
-          <span>María.</span>
+          <span>María Ceballos.</span>
         </h1>
 
         <p className="hero-title">Junior Dev · DAW Graduada 2026</p>
@@ -60,7 +60,7 @@ export default function Hero() {
             <div className="photo-dot" aria-hidden="true" />
 
             <div className="photo-inner">
-              <img src={avatarImg} alt="María C.M. — Desarrolladora Full-Stack" className="photo-img" />
+              <img src={avatarImg} alt="María Ceballos.Mesías. — Desarrolladora Full-Stack" className="photo-img" />
               {/* scanline overlay */}
               <div className="scanlines" aria-hidden="true" />
               {/* vignette */}
@@ -68,7 +68,7 @@ export default function Hero() {
             </div>
 
             <div className="photo-label">
-              <span className="photo-label-name">MARÍA C.M.</span>
+              <span className="photo-label-name">MARÍA CEBALLOS MESIAS</span>
               <span className="photo-label-meta">FULL-STACK DEV</span>
             </div>
           </div>
