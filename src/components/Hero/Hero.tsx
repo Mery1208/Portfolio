@@ -60,7 +60,7 @@ export default function Hero() {
             <div className="photo-dot" aria-hidden="true" />
 
             <div className="photo-inner">
-              <img src={avatarImg} alt="María Ceballos.Mesías. — Desarrolladora Full-Stack" className="photo-img" />
+              <img src={avatarImg} alt="María Ceballos Mesías. — Desarrolladora Full-Stack" className="photo-img" />
               {/* scanline overlay */}
               <div className="scanlines" aria-hidden="true" />
               {/* vignette */}
